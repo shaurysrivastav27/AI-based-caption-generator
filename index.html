@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="file-upload">
+        <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger('click')">Add Image</button>
+
+        <div class="image-upload-wrap">
+            <input class="file-upload-input" type="file" onchange="readURL(this);" accept="image/*" />
+            <div class="drag-text">
+                <h3>Drag and drop a file or select add Image</h3>
+            </div>
+        </div>
+        <div class="file-upload-content">
+            <img class="file-upload-image" src="#" alt="your image" />
+        </div>
+    </div>
+
+    <div id="caption-container">
+        <h2>Generated Captions:</h2>
+        <ul id="caption-list" class="list-group"></ul>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="service.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
