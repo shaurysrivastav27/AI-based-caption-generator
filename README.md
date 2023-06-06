@@ -1,5 +1,8 @@
 # AI-based-caption-generator
-
+## Downloading the dependencies
+```
+    pip install -r req.txt
+```
 ## running the app 
 In the command line interface for running the service on local server: 
 ```

@@ -1,0 +1,7 @@
+transformer
+datasets
+uvicorn
+fastapi
+python-mutlipart
+numpy
+openai
